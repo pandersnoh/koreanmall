@@ -1,0 +1,582 @@
+a {
+  text-decoration: none;
+  color: #111;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.inner {
+  width: 1280px;
+  margin: 0px auto;
+  position: relative;
+}
+.swiper-container{
+  width: 100%;
+}
+.km_sprite {
+  background-image: url('/images/koreanmall_icons.png');
+  background-repeat: no-repeat;
+}
+.sec_tit {
+  padding-top: 60px;
+  letter-spacing: -0.03em;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #222;
+    width: 100%;
+  }
+  &.noborder::after {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  h4 {
+    font-size: 28px;
+    color: #000;
+    em {
+      font-size: 13px;
+      color: #333;
+      line-height: 50px;
+      padding-left: 20px;
+    }
+  }
+  a {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    color: #111;
+    right: 0;
+    top: 78px;
+    padding-right: 20px;
+    &:hover {
+      color: #f91f23
+    }
+    &:hover em {
+      transform: rotate(360deg);
+    }
+    em {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 13px;
+      height: 13px;
+      margin-left: 5px;
+      background-position: -66px -90px;
+      transform: rotate(0deg);
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;      
+    } 
+  }
+}
+.price_typeA {
+  padding: 15px;
+  dt {
+    line-height: 19px;
+    height: 40px;
+    font-size: 13px;
+    color: #000;
+    overflow: hidden;
+  }
+  .price_info {
+    position: relative;
+    .price_cus {
+      font-family: "roboto", sans-serif;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .price_sale {
+      font-family: "roboto", sans-serif;
+      display: block;
+    }
+    .salep {
+      position: absolute;
+      right: 10px;
+      bottom: -3px;
+      display: inline-block;
+      font-size: 20px;
+      color: #ff3249;
+      font-weight: 600;
+      font-family: 'Roboto', sans-serif;    
+      em {
+        font-size: 14px;
+      }  
+    }
+    .point {
+      height: 30px;
+      line-height: 28px;
+      display: block;
+      color: #ff3249;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+.price_info {
+  font-family: "roboto", sans-serif;
+  .price_cus {
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+    letter-spacing: 0;
+    padding: 10px 0 0 0;
+  }
+  .price_sale {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 0 9px 0;
+  }
+  .salep {
+    font-size: 28px;
+    color: #ff3249;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: -1px;
+    em {
+      font-size: 20px;
+    }
+  }
+  .point {
+    padding: 2px 0 0 0;
+    display: inline-block;
+    color: #ff3249;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    position: relative;
+    b {
+      display: inline-block;
+      border: 1px solid #FF3248;
+      height: 14px;
+      line-height: 15px;
+      padding: 0 1px;
+      margin-right: 5px;
+      color: #ff3249;
+      background-color: #fff;
+      font-family: dotum,'맑은고딕',Malgun Gothic,'돋음', 'Apple Gothic', '애플고딕', arial, sans-serif;
+      font-size: 11px;
+      font-weight: normal; 
+    }
+  }  
+}
+header {
+  height: 120px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    background-position: -2px -5px;
+  }
+  .km_logo a {
+    display: block;
+    width: 194px;
+    height: 65px;
+    text-indent: -9999px;
+  }
+}
+.gnb_util {
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  ul {
+    li {
+      float: left;
+      margin: 0 10px;
+      a {
+        display: block;
+        width: 55px;
+        height: 55px;  
+        font-size: 12px;
+        text-align: center;
+        color: #666;
+        transition: opacity 0.3s;
+        &:hover {
+          text-decoration: underline;
+          opacity: 0.5;
+        }
+        i {
+          display: block;
+          width: 40px;
+          height: 46px;
+          margin: 0px auto;
+          &.login {
+            background-position: -2px -200px;
+          }
+          &.myshop {
+            background-position: -43px -200px;
+          }
+          &.cart {
+            background-position: -84px -200px;
+          }  
+        }        
+        span {
+          display: block;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+nav {
+  height: 50px;
+  border-bottom: 2px solid #111;
+  .global_category {
+    .cat_menu {
+      .global_btn {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background-color: #111;
+        color: #fff;
+        line-height: 54px;
+        position: relative;
+        padding-left: 50px;
+        letter-spacing: -0.03em;
+        box-sizing: border-box;
+        &::after {
+          content: '';
+          display: block;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          right: 15px;
+          top: 18px;
+          background-image: url('/images/koreanmall_icons.png');
+          background-repeat: no-repeat;
+          background-position: -37px -88px;
+        }
+        .cat {
+          position: absolute;
+          top: 15px;
+          left: 20px;
+          width: 23px;
+          height: 23px;
+          background-position:-8px -86px;          
+        }
+      }
+    }
+    .cat_list {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      min-width: 198px;
+      min-height: 419px;
+      border: 1px solid #333333;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 80;
+      ul {
+        li {
+          .sub_cate {
+            position: absolute;
+            display: none;
+            width: 810px;
+            height: 502px;
+            top: -1px;
+            left: 199px;
+            border: 2px solid #222;
+            border-left: none;
+            padding-bottom: 25px;
+            background-color: #fff;
+            box-sizing: border-box;
+            h3 {
+              padding: 35px 28px 10px 35px;
+              font-size: 26px;
+              font-weight: bold;
+            }
+            dl {
+              width: 160px;
+              box-sizing: border-box;
+              margin: 30px 0 0 35px;
+              float: left;
+              dt {
+                height: 15px;
+                margin-bottom: 12px;
+                font-size: 15px;
+                font-weight: bold;
+                color: #999;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+              }
+              dd {
+                a {
+                  display: block;
+                  font-size: 15px;
+                  height: 30px;
+                  color: #000;
+                  overflow: hidden;
+                  padding: 5px 10px 8px 0px;
+                  line-height: 18px;
+                  background-color: #fff;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  box-sizing: border-box;                  
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+            .sub_cate_ban {
+              position: absolute;
+              right: 32px;
+              top: 0px;
+              .tit {
+                display: block;
+                padding: 35px 28px 15px 0px;
+                font-size: 18px;
+                font-weight: bold;
+              }
+              a {
+                display: block;
+                height: 398px;
+                border: 1px solid #ccc;
+                transition: opacity 0.3s;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }  
+            }
+          }
+          .global_cat_m {
+            display: block;
+            width: 100%;
+            height: 50px;
+            padding-left: 20px;
+            line-height: 50px;
+            box-sizing: border-box;
+            color: #fff;
+            transition: background-color 0.3s;
+            &:hover {
+              background-color: rgba(0,0,0,0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+  .home_gnb {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    ul {
+      li {
+        float: left;
+        margin: 0 18px;
+        height: 50px;
+        line-height: 50px;
+        a {
+          letter-spacing: -0.03em;
+          padding: 15px 20px;
+          position: relative;
+          &:hover {
+            color: #f91f23;
+            border-bottom: 2px solid #f91f23;
+          }
+          &.km_new::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('/images/koreanmall_icons.png');
+            background-repeat: no-repeat;
+            background-position: -85px -90px;
+          }          
+        }
+      }
+    }
+  }  
+}
+.search_area {
+  position: absolute;
+  top: 40px;
+  left: 390px;
+  width: 490px;
+  height: 40px;
+  border: 2px solid #f91f23;
+  border-radius: 20px;
+  fieldset {
+    legend {
+      display: none;
+    }
+    .input_ui {
+      padding: 0 40px 0 22px;
+      position: relative;
+      input[type='text'] {
+        width: 387px;
+        height: 40px;
+        padding-right: 30px;
+        border: 0;
+        font-size: 18px;
+        line-height: 40px;
+        color: #111111;
+        background-color: transparent;
+        font-size: 16px;
+      }      
+      button {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: 0px;
+        background-color: #fff;
+        text-indent: -9999px;
+        background-size: 200px;
+        cursor: pointer;
+        &.search {
+          background-position: -50px -98px;
+        }
+      }      
+    }
+  }
+  label {
+    display: none;
+  }  
+}
+.gnb_ban {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+footer {
+  .notice_area {
+    width: 100%;
+    height: 54px;
+    background-color: #f6f6f6;
+    position: relative;
+    .list_company {
+      ul {
+        li {
+          float: left;
+          width: 120px;
+          text-align: center;
+          position: relative;
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            width: 1px;
+            height: 15px;
+            background-color: #abbaba;
+          }
+          &:last-child::after {
+            display: none;
+          }
+          a {
+            display: block;
+            line-height: 56px;
+            color: #4d4d4d;
+            font-size: 14px;
+            &:hover {
+              color: #000;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .list_sns {
+      position: absolute;
+      top: 17px;
+      right: 0;
+      ul {
+        text-align: center;
+        li {
+          text-indent: -9999px;
+          display: inline-block;
+          &.weibo {
+            width: 30px;
+            height: 25px;
+            background-position: -5px -340px;
+          }
+          &.instagram {
+            width: 30px;
+            height: 25px;
+            background-position: -40px -339px;            
+          }
+          &.facebook {
+            width: 61px;
+            height: 25px;
+            background-position: -75px -339px;            
+          }
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .copyright_area {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .foot_logo {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      width: 120px;
+      height: 37px;
+      background-position:-14px -267px;
+      text-indent: -9999px;
+      margin-left: 0px;
+      margin-right: 100px;
+    }
+    .foot_address {
+      padding-left: 200px;
+      .foot_crt {
+        width: 920px;
+        color: #666;
+        span {
+          font-size: 11px;
+          font-family: 'Dotum', sans-serif;
+          padding-right: 26px;
+        }
+      }
+      .foot_policy {
+        margin: 20px 0;
+        span {
+          display: block;
+          font-size: 11px;
+          font-family: 'Dotum', sans-serif;
+          color: #666;
+        }
+      }
+      .cr {
+        font-family: 'Dotum', sans-serif;
+        font-size: 11px;
+        color: #666;
+      }     
+    }
+  }
+  .foot_cert {
+    margin: 30px 0;
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}

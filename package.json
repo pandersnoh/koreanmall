@@ -1,0 +1,39 @@
+{
+  "name": "koreanmall",
+  "version": "1.0.0",
+  "description": "국내/해외 역직구 쇼핑몰 코리안몰",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "SEUNGMIN ROH",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^9.8.8",
+    "css-loader": "^6.4.0",
+    "jquery": "^1.12.4",
+    "jsdom": "^18.0.0",
+    "parcel": "^2.0.0-nightly.889",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.1",
+    "swiper": "^7.1.0"
+  },
+  "dependencies": {
+    "jquery-jsdom": "^1.0.0",
+    "jquery-ui-dist": "^1.12.1"
+  }
+}
