@@ -23,7 +23,7 @@
     "css-loader": "^6.4.0",
     "jquery": "^1.12.4",
     "jsdom": "^18.0.0",
-    "parcel": "^2.0.0-nightly.889",
+    "parcel": "^2.0.0",
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
